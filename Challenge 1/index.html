@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Gif Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span>
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Tears%20of%20Joy.png"
+            alt="Face with Tears of Joy"
+            width="50"
+            height="50"
+          />
+        </span>
+        Challenge 1: Click Meme Challenge
+      </h1>
+      <p>
+        Goal: klik sampai <b>100</b>. meme akan upgrade di poin tertentu.
+      </p>
+    </header>
+
+    <main class="card">
+      <div id="gif" class="gif">
+        <img
+          id="gifImg"
+          rel="preload" as="image"
+          src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NGF1cHc3MWNjZTJlN2N5cGQ3bHFzeDk2Z3RmcDE2NGYzM2E5ZGN3NyZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/TDIhmVISz1r8CUwHkf/giphy.gif"
+          alt="Gif"
+          loading="lazy"
+        />
+        <div class="gifTitle" id="gifTitle">Starter Gif</div>
+      </div>
+
+      <div class="info">
+        <div class="count">
+          <span id="count">0</span><span class="muted">/100</span>
+        </div>
+        <div id="msg" class="msg">Klik tombol untuk mulai 🎯</div>
+      </div>
+
+      <div class="actions">
+        <button id="btn" class="btn">Klik +1</button>
+        <button id="reset" class="btn ghost">Reset</button>
+      </div>
+
+      <div class="note">
+        <span>DOM yang dipakai:</span> <code>addEventListener</code>,
+        <code>textContent</code>, <code>src</code>, <code>classList</code>
+      </div>
+    </main>
+
+    <script src="script.js?v=1.1"></script>
+  </body>
+</html>

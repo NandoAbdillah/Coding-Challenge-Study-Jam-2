@@ -1,0 +1,131 @@
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: rgba(17,24,39,.62);
+  --border: rgba(17,24,39,.12);
+  --shadow: 0 14px 40px rgba(17,24,39,.10);
+  --radius: 18px;
+
+  --accent: #2563eb;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+
+body{
+  min-height:100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--text);
+  background: var(--bg);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding: 26px 16px 34px;
+}
+
+header{
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+header h1{
+  margin:0;
+  font-size: 24px;
+  font-weight: 950;
+  letter-spacing: .2px;
+  display: flex;   
+  gap: 10px;     
+  justify-content: center;
+  align-items: center; 
+
+}
+
+
+header p{
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.card{
+  width: min(720px, 100%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.stage{
+  height: 360px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(420px 240px at 30% 20%, rgba(37,99,235,.10), transparent 60%),
+    radial-gradient(420px 240px at 75% 70%, rgba(17,24,39,.04), transparent 60%),
+    #ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+#meme{
+  width: min(200px, 86%);
+  max-height: 250px;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(17,24,39,.10);
+  box-shadow: 0 16px 34px rgba(17,24,39,.14);
+  user-select: none;
+  -webkit-user-drag: none;
+
+  /* transform akan diubah dari JS */
+  transform: rotate(0deg);
+}
+
+.info{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(37,99,235,.04);
+}
+
+.chip{
+  border: 1px solid rgba(17,24,39,.10);
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 850;
+  color: var(--muted);
+}
+
+.chip span{
+  color: var(--text);
+}
+
+.hint{
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+code{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: .95em;
+  color: var(--text);
+  background: rgba(17,24,39,.04);
+  border: 1px solid rgba(17,24,39,.08);
+  padding: 2px 6px;
+  border-radius: 8px;
+}

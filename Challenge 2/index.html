@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Challenge 2 — Hover to Stop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><span>
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Cat%20Face.png" alt="Cat Face" width="50" height="50" />
+    </span> Challenge 2: Hover to Stop </h1>
+    <p>Goal: pakai event hover untuk stop/play, dan ubah style rotasi lewat JavaScript.</p>
+  </header>
+
+  <main class="card">
+    <div class="stage">
+
+      <img id="meme" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWVqcjl1OHc4MDU4MmExazkzbHlpYnR3NDVhdHl2ZXQwZzg5cmEwayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/In0Lpu4FVivjISX9HT/giphy.gif"  alt="meme" draggable="false" />
+    </div>
+
+    <div class="info">
+      <div class="chip">Status: <span id="status">Spinning</span></div>
+      <div class="chip">Sudut: <span id="angle">0°</span></div>
+    </div>
+
+    <p class="hint">
+      Coba <b>hover</b> gambar untuk berhenti, dan <b>lepas hover</b> untuk muter lagi.
+      (Hint DOM: <code>mouseenter</code>, <code>mouseleave</code>, <code>style.transform</code>)
+    </p>
+  </main>
+
+  <script src="script.js?v=1.2"></script>
+</body>
+</html>
