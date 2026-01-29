@@ -1,8 +1,32 @@
-# Study Jam 2 — DOM & Events Challenges
+<h1 align="center">Study Jam 2 — DOM & Events Challenges</h1>
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWRvNzkwMWpucHRiN2VhaGdxcHh0dGpjbGp0dng4ZXdoMHVyMjFyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dps6uX4XPOKeA/giphy.gif" width=400>
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWRvNzkwMWpucHRiN2VhaGdxcHh0dGpjbGp0dng4ZXdoMHVyMjFyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dps6uX4XPOKeA/giphy.gif" width="400" />
+</p>
 
-<br>  
+<p align="center">
+ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+    <img alt="HTML5" src="https://img.shields.io/badge/HTML 5-grey?style=for-the-badge&logo=html5" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+    <img alt="CSS3" src="https://img.shields.io/badge/CSS 3-grey?style=for-the-badge&logo=css" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+    <img alt="JavaScript" src="https://img.shields.io/badge/JAVASCRIPT-grey?style=for-the-badge&logo=javascript" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">
+    <img alt="DOM & Events" src="https://img.shields.io/badge/DOM%20%26%20EVENTS-grey?style=for-the-badge&logo=javascript" />
+  </a>
+</p>
+
+<p align="center">
+  <img alt="Beginner Friendly" src="https://img.shields.io/badge/LEVEL-BEGINNER%20FRIENDLY-grey?style=for-the-badge" />
+  <img alt="Focus" src="https://img.shields.io/badge/FOCUS-DOM%20MANIPULATION-grey?style=for-the-badge" />
+  <img alt="Focus" src="https://img.shields.io/badge/FOCUS-EVENT%20HANDLING-grey?style=for-the-badge" />
+  <img alt="Platform" src="https://img.shields.io/badge/PLATFORM-WEB-grey?style=for-the-badge&logo=googlechrome" />
+</p>
+
+<br/>
 
 Repo ini berisi versi **challenge yang sudah “fikss”** untuk:
 
@@ -68,8 +92,8 @@ Kalau kamu pakai VS Code:
 
 ---
 
-
 <a id="ch1"></a>
+
 # 🗿 Challenge 1 : Click GIF Upgrade
 
 <img src="assets/challenge1.gif" width="500" />
@@ -125,12 +149,12 @@ Kamu cuma boleh ngubah / nambahin **4 poin** di `script.js`:
 - update UI via `textContent/innerText`
 - state (clicks) → UI (counter + gif + message)
 
-
 <br>
 
 ---
 
 <a id="ch2"></a>
+
 # 😸 Challenge 2 : Hover to Stop
 
 <img src="assets/challenge2.gif" width="500" />
@@ -143,7 +167,6 @@ Kamu cuma boleh ngubah / nambahin **4 poin** di `script.js`:
 - status text berubah sesuai kondisi
 - derajat (#angle) ikut update
 
-
 ### Aturan Validasi (Important)
 
 Cuma boleh ngubah / nambahin **4 poin**:
@@ -153,21 +176,20 @@ Cuma boleh ngubah / nambahin **4 poin**:
 3. buat event mouseenter
 4. terapkan rotasi ke style.transform
 
-
 ---
 
 ## Jawaban / Fix yang Dilakukan (4 poin)
 
 ### (1) Ambil elemen gambar dari HTML
 
-- Ambil elemen gambar yang diputar via selector DOM 
+- Ambil elemen gambar yang diputar via selector DOM
 
 ### (2) Lengkapi event `mouseleave`
 
 - Saat mouse keluar:
   - `spinning = true`
   - status text jadi “Spinning”
-    
+
 ### (3) Buat event `mouseenter`
 
 - Saat mouse masuk:
@@ -178,7 +200,7 @@ Cuma boleh ngubah / nambahin **4 poin**:
 
 - Di loop animasi, update:
   - `img.style.transform = "rotate(...deg)"`
-- Tanpa ini: `angle` berubah, tapi gambar tidak muter 
+- Tanpa ini: `angle` berubah, tapi gambar tidak muter
 
 ---
 
@@ -194,6 +216,7 @@ Cuma boleh ngubah / nambahin **4 poin**:
 ---
 
 <a id="ch3"></a>
+
 # 🛸 Challenge 3 : Move The Avatar
 
 <img src="assets/challenge1.gif" width="500" />
@@ -206,7 +229,7 @@ Mini arena:
 - nama player bisa diganti tapi harus valid
 - background arena & avatar bisa diganti via dropdown
 
-Requirement resminya: 
+Requirement resminya:
 
 ### Aturan Validasi (Important)
 
@@ -217,7 +240,6 @@ Cuma boleh ngubah / nambahin **4 poin** sesuai TODO:
 3. event change dropdown
 4. update DOM/style biar perubahan kelihatan
 
-
 ---
 
 ## Jawaban / Fix yang Dilakukan (4 poin)
@@ -226,27 +248,27 @@ Cuma boleh ngubah / nambahin **4 poin** sesuai TODO:
 
 - Pasang event `document.addEventListener("keydown", (e) => ...)`
 - Mapping:
-  - W = atas, A = kiri, S = bawah, D = kanan 
+  - W = atas, A = kiri, S = bawah, D = kanan
 - Catatan penting:
-  - saat fokus di input nama, WASD harus non-aktif biar gak ganggu ngetik 
+  - saat fokus di input nama, WASD harus non-aktif biar gak ganggu ngetik
 
 ### (2) EVENT `input` — Validasi nama
 
 - Pasang event input pada field nama:
   - valid → update tag + hint “Nama valid”
-  - invalid → tambah class “bad” + hint error 
+  - invalid → tambah class “bad” + hint error
 - Rule nama:
   - minimal 3 karakter
-  - hanya huruf dan spasi 
+  - hanya huruf dan spasi
 
 ### (3) EVENT `change` — Dropdown background & avatar
 
 - dropdown background → ganti class arena
-- dropdown avatar → ganti src gambar avatar 
+- dropdown avatar → ganti src gambar avatar
 
 ### (4) UPDATE DOM/STYLE — Terapkan perubahan ke tampilan
 
-Yang harus kelihatan berubah: 
+Yang harus kelihatan berubah:
 
 - posisi player (style.left/top)
 - nama player (textContent)
@@ -263,7 +285,3 @@ Yang harus kelihatan berubah:
 - `input` untuk validasi realtime
 - `change` untuk dropdown
 - update style (left/top) untuk gerak + batas arena (keepInsideArena)
-
-
-
-
