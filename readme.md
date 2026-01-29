@@ -1,8 +1,8 @@
 # Study Jam 2 — DOM & Events Challenges
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHo1cHBvZzk5eG9pd2lrODdhcnF6ZGpkZGVuMmNlbDltZDU3NHRycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RrVzUOXldFe8M/giphy.gif" width=400>
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWRvNzkwMWpucHRiN2VhaGdxcHh0dGpjbGp0dng4ZXdoMHVyMjFyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dps6uX4XPOKeA/giphy.gif" width=400>
 
-<br>
+<br>  
 
 Repo ini berisi versi **challenge yang sudah “fikss”** untuk:
 
